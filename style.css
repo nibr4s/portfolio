@@ -1,0 +1,23 @@
+#logo{display: none;}
+header, footer, .custom-cursor {
+    cursor: url('assets/Alien\ Sitting\ on\ Moon\ &\ Floating\ With\ Planet--cursor--SweezyCursors..cur'), auto !important;
+}
+w.
+
+
+ 
+.spaceBetween
+{
+    display: flex;
+    justify-content: space-between;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: '', ;
+}
+
