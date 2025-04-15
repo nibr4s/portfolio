@@ -34,11 +34,7 @@ color: #4d3e9a;
 .white{
     color: white;
 }
-h1{
-    font-family: "Alice", serif;
-}
- 
-h1{
+
     font-size: 60px;
     margin: 20px 0;
 }
@@ -51,4 +47,7 @@ h1{
 }
 header>nav{
     margin: auto;
+}
+.w75 {
+    width: 75%;
 }
