@@ -1,23 +1,54 @@
-#logo{display: none;}
-header, footer, .custom-cursor {
-    cursor: url('assets/Alien\ Sitting\ on\ Moon\ &\ Floating\ With\ Planet--cursor--SweezyCursors..cur'), auto !important;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
 }
-w.
-
-
  
-.spaceBetween
-{
+/* ------ Flex ------ */
+.flex{
     display: flex;
+    flex-wrap: wrap;
+}
+ 
+.spaceBetween{
     justify-content: space-between;
 }
-.container {
+ 
+.container{
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
 }
-body {
-    background-color: #000;
-    color: #fff;
-    font-family: '', ;
+ 
+.alignCenter{
+    align-items: center;
 }
-
+.black{
+    color: black;
+}
+ 
+.black:hover{
+color: #4d3e9a;
+}
+ 
+.white{
+    color: white;
+}
+h1{
+    font-family: "Alice", serif;
+}
+ 
+h1{
+    font-size: 60px;
+    margin: 20px 0;
+}
+.bgred{
+    background-color: red;
+}
+.flexend{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+header>nav{
+    margin: auto;
+}
