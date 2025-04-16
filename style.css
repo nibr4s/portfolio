@@ -88,7 +88,6 @@ h6 {
     font-family: "Bungee Spice", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: white;
 }
 
 p {
@@ -141,7 +140,7 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Bungee Spice", sans-serif;
     font-size: 22px;
     text-transform: uppercase;
     text-decoration: none;
@@ -170,18 +169,15 @@ footer {
 .footer-copyright {
     grid-area: copyright;
     text-align: center;
-  }
-  .footer-copyright 
-    border-top: 0;
 }
+
 .space-button {
     display: inline-block;
-    padding: 12px 25px;
-    font-size:36px;
-    font-family: "Noto Sans", sans-serif;
+    padding: 1px 25px;
+    font-size: 36px;
+    font-family: "Bungee Spice", sans-serif;
     font-weight: 700;
     color: white;
-    background-color: #4d3e9a;
     text-decoration: none;
     text-align: center;
     border: none;
@@ -199,6 +195,9 @@ footer {
     margin-left: 10px;
     display: inline-block;
     transition: transform 0.2s ease;
+    font-family: "Bungee Spice", sans-serif;
+    transition: transform 0.2s ease;
+    font-family: "Bungee Spice", sans-serif;
 }
 
 .space-button:hover {
@@ -209,25 +208,160 @@ footer {
 .space-button:hover::after {
     transform: translateX(-5px);
 }
-}
 .socials {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 2rem;
-  }
-  
-  .socials a {
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-    text-decoration: none;
+    justify-content: center;
     align-items: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.socials li {
+    display: flex;
+    align-items: center;
+    font-family: "Noto Sans", sans-serif;
+    font-size:26px;
+    color: white;
+}
+
+.socials img {
+    width:44px;
+    height: 44px;
+    margin-right: 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.socials a:hover {
+    color: #4d3e9a;
+}
+
   }
-  
-  .socials a:hover {
-    color: var(--color-black--hover);
+h2 {
+    font-size: 100px;
+    font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.purple{
+    color: #ba79bf;
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+    .footer-copyright {
+        grid-area: copyright;
+        text-align: center;
+        border-top: 0;
+        padding: 8px 0;
+        color: white;
+        font-size: 16px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: transparent;
+    }
+    
+.projects-heading{
+    font-family: "Bungee Spice", sans-serif;
+    font-size:  90px;
+    font-weight: 700;
+    color: #4d3e9a;
+    text-align: center;
+    margin: 30px 0;
+    text-transform: uppercase;
+}
+
+.projects-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.projects-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.projects-list li {
+    text-align: center;
+    max-width: 200px;
+}
+
+.projects-list img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.projects-list img:hover {
+    transform: scale(1.05);
+}
+
+.projects-list a {
+    display: block;
+    margin-top: 20px;
+    font-family: "Bungee Spice", sans-serif;
+    font-size: 18px;
+    color: #4d3e9a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.projects-list a:hover {
+    color: #3a2f7a;
+}
+.projects-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.projects-list li {
+    text-align: center;
+}
+
+.projects-list img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.projects-list img:hover {
+    transform: scale(1.05);
+}
+.neon-purple {
+    color: #ba79bf;
+    text-shadow: 0 0 5px #ba79bf, 0 0 10px #ba79bf, 0 0 20px #ba79bf, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff;
+    font-family: "Bungee Spice", sans-serif;
+    font-weight:lighter;
+}
+.csharp-icon {
+    width: 400px;
+    height: 300px;
+    object-fit: contain; 
   }
