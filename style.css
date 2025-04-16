@@ -5,7 +5,6 @@
     font-family: "Noto Sans", sans-serif;
 }
 
-/* ------ Flex ------ */
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -41,17 +40,12 @@ h1 {
     justify-content: center;
     align-items: center;
     height: 30vh;
-    /* Full viewport height */
     display: flex;
-    /* Use Flexbox for centering */
     justify-content: center;
-    /* Center horizontally */
     align-items: flex-end;
-    /* Align to the bottom */
     justify-content: center;
     align-items: center;
     margin: 0;
-    /* Remove default margin */
 }
 
 font-size: 60px;
@@ -107,65 +101,46 @@ p {
 
 .header-content {
     display: flex;
-    /* Use Flexbox for layout */
     align-items: center;
-    /* Vertically align items */
     gap: 20px;
-    /* Add spacing between the aside and the image */
 }
 
 aside {
     background-color: hsl(0, 0%, 0%);
-    /* Dark background for contrast */
     color: white;
-    /* White text for readability */
     padding: 10px;
-    /* Add some padding */
     width: 200px;
-    /* Set a fixed width */
     height: auto;
-    /* Adjust height to fit content */
-    /* Remove absolute positioning */
 }
 
 header,
 section,
 footer {
     position: relative;
-    /* Ensure these elements are positioned relative to the background */
     z-index: 1;
-    /* Place them above the background */
 }
 
 .sketchfab-embed-wrapper {
     position: fixed;
-    /* Fix the div to the viewport */
     top: 0;
     left: 0;
     width: 100vw;
-    /* Full width of the viewport */
     height: 100vh;
-    /* Full height of the viewport */
     z-index: -1;
-    /* Place it behind all other elements */
     overflow: hidden;
-    /* Prevent scrolling within the iframe */
 }
 
 .sketchfab-embed-wrapper iframe {
     width: 100%;
-    /* Make the iframe fill the wrapper */
     height: 100%;
-    /* Make the iframe fill the wrapper */
     border: none;
-    /* Remove the iframe border */
 }
+
 .nav-center {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
-    /* Add spacing between nav items */
     font-family: "Noto Sans", sans-serif;
     font-size: 22px;
     text-transform: uppercase;
@@ -174,7 +149,6 @@ footer {
     top: 24%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* Center the nav in the whole website */
     list-style: none;
 }
 
@@ -216,7 +190,7 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
     position: relative;
-    top: -10px; /* Moves the button slightly up */
+    top: -10px;
 }
 
 .space-button::after {
@@ -257,5 +231,3 @@ footer {
   .socials a:hover {
     color: var(--color-black--hover);
   }
-
-  
