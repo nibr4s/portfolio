@@ -167,7 +167,7 @@ footer {
     gap: 15px;
     /* Add spacing between nav items */
     font-family: "Noto Sans", sans-serif;
-    font-size: 18px;
+    font-size: 22px;
     text-transform: uppercase;
     text-decoration: none;
     position: absolute;
@@ -192,3 +192,70 @@ footer {
 }
     border-radius: 5px;
 }
+
+.footer-copyright {
+    grid-area: copyright;
+    text-align: center;
+  }
+  .footer-copyright 
+    border-top: 0;
+}
+.space-button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size:36px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: #4d3e9a;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+    top: -10px; /* Moves the button slightly up */
+}
+
+.space-button::after {
+    content: "←";
+    font-size: 28px;
+    margin-left: 10px;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.space-button:hover {
+    background-color: #3a2f7a;
+    transform: scale(1.05);
+}
+
+.space-button:hover::after {
+    transform: translateX(-5px);
+}
+}
+.socials {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .socials a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    text-decoration: none;
+    align-items: center;
+  }
+  
+  .socials a:hover {
+    color: var(--color-black--hover);
+  }
+
+  
