@@ -4,65 +4,97 @@
     box-sizing: border-box;
     font-family: "Noto Sans", sans-serif;
 }
- 
+
 /* ------ Flex ------ */
-.flex{
+.flex {
     display: flex;
     flex-wrap: wrap;
 }
- 
-.spaceBetween{
+
+.spaceBetween {
     justify-content: space-between;
 }
- 
-.container{
+
+.container {
     max-width: 1200px;
     margin: auto;
 }
- 
-.alignCenter{
+
+.alignCenter {
     align-items: center;
 }
-.black{
+
+.black {
     color: black;
 }
- 
-.black:hover{
-color: #4d3e9a;
-}
- 
-.white{
-    color: white;
+
+.black:hover {
+    color: #4d3e9a;
 }
 
-    font-size: 60px;
-    margin: 20px 0;
-}
-.bgred{
-    background-color: red;
-}
-.flexend{
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-header>nav{
-    margin: auto;
-}
-.w75 {
-    width: 75%;
-}
-.bgblack{
-    background-color: black;
-}
 .white {
     color: white;
 }
-h1,h2, h3, h4, h5, h6 {
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    /* Full viewport height */
+    display: flex;
+    /* Use Flexbox for centering */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: flex-end;
+    /* Align to the bottom */
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    /* Remove default margin */
+}
+
+font-size: 60px;
+margin: 20px 0;
+}
+
+.bgred {
+    background-color: red;
+}
+
+.flexend {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+header>nav {
+    margin: auto;
+}
+
+.w75 {
+    width: 75%;
+}
+
+.bgblack {
+    background-color: black;
+}
+
+.white {
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-size: 60px;
     margin: 20px 0;
-    font-family: "Special Gothic Expanded One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
 }
 
 p {
@@ -72,56 +104,91 @@ p {
     font-weight: 500;
     font-style: normal;
 }
+
 .header-content {
-    display: flex; /* Use Flexbox for layout */
-    align-items: center; /* Vertically align items */
-    gap: 20px; /* Add spacing between the aside and the image */
+    display: flex;
+    /* Use Flexbox for layout */
+    align-items: center;
+    /* Vertically align items */
+    gap: 20px;
+    /* Add spacing between the aside and the image */
 }
 
 aside {
-    background-color: hsl(0, 0%, 0%); /* Dark background for contrast */
-    color: white; /* White text for readability */
-    padding: 10px; /* Add some padding */
-    background-color: transparent; /* Make the background transparent */
-    width: 200px; /* Set a fixed width */
-    height: auto; /* Adjust height to fit content */
-    position: relative; /* Remove absolute positioning */
+    background-color: hsl(0, 0%, 0%);
+    /* Dark background for contrast */
+    color: white;
+    /* White text for readability */
+    padding: 10px;
+    /* Add some padding */
+    width: 200px;
+    /* Set a fixed width */
+    height: auto;
+    /* Adjust height to fit content */
+    /* Remove absolute positioning */
 }
 
-
-.space-button {
-    display: inline-block;
-    padding: 10px 20px; /* Add padding for button size */
-    margin: 15px 0; /* Add spacing between buttons */
-    color: rgb(255, 255, 255); /* White text for contrast */
-    text-decoration: ghostwhite; /* Remove underline */
-    font-size: 25px; /* Adjust font size */
-    font-family: "Noto Sans", sans-serif; /* Use a clean font */
-    background: linear-gradient(45deg, #1a2a6c, #001aff, #000000); /* Space-like gradient */
-    border: 2px solid transparent; /* Transparent border */
-    border-radius: 25px; /* Rounded corners */
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.3); /* Glowing effect */
-    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
-}
-
-
-header, section, footer {
-    position: relative; /* Ensure these elements are positioned relative to the background */
-    z-index: 1; /* Place them above the background */
+header,
+section,
+footer {
+    position: relative;
+    /* Ensure these elements are positioned relative to the background */
+    z-index: 1;
+    /* Place them above the background */
 }
 
 .sketchfab-embed-wrapper {
-    position: fixed; /* Fix the div to the viewport */
+    position: fixed;
+    /* Fix the div to the viewport */
     top: 0;
     left: 0;
-    width: 100vw; /* Full width of the viewport */
-    height: 100vh; /* Full height of the viewport */
-    z-index: -1; /* Place it behind all other elements */
-    overflow: hidden; /* Prevent scrolling within the iframe */
+    width: 100vw;
+    /* Full width of the viewport */
+    height: 100vh;
+    /* Full height of the viewport */
+    z-index: -1;
+    /* Place it behind all other elements */
+    overflow: hidden;
+    /* Prevent scrolling within the iframe */
 }
 
 .sketchfab-embed-wrapper iframe {
-    width: 100%; /* Make the iframe fill the wrapper */
-    height: 100%; /* Make the iframe fill the wrapper */
-    border: none; /* Remove the iframe border */
+    width: 100%;
+    /* Make the iframe fill the wrapper */
+    height: 100%;
+    /* Make the iframe fill the wrapper */
+    border: none;
+    /* Remove the iframe border */
+}
+.nav-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    /* Add spacing between nav items */
+    font-family: "Noto Sans", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Center the nav in the whole website */
+    list-style: none;
+}
+
+.nav-center a {
+    color: white;
+    font-family: "Bungee Spice", sans-serif;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-center a:hover {
+    color: white;
+    background-color: #4d3e9a;
+}
+    border-radius: 5px;
 }
